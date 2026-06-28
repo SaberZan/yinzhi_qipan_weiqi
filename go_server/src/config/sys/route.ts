@@ -1,0 +1,17 @@
+export default [
+    "gate.main.login",
+    "gate.main.register",
+    "connector.main.enter",
+    "connector.main.useKatago",
+    "connector.main.unuseKatago",
+    "katagoAnalysis.main.initGame",
+    "katagoAnalysis.main.play",
+    "katagoAnalysis.main.genMove",
+    "katagoAnalysis.main.resign",
+    "katagoAnalysis.main.manualScore",
+    "katagoGTP.main.initGame",
+    "katagoGTP.main.play",
+    "katagoGTP.main.genMove",
+    "katagoGTP.main.resign",
+    "katagoGTP.main.manualScore",
+]

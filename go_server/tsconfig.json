@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES2019",
+    "module": "node16",
+    "lib": ["ES2019", "DOM", "ES2020"],
+    "sourceMap": true,
+    "outDir": "./dist",
+    
+    /* Type Checking - 关闭严格检查以兼容旧代码 */
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "strict": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "strictPropertyInitialization": false,
+    
+    /* Module Resolution */
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node16",
+    "allowSyntheticDefaultImports": true,
+    
+    /* Other */
+    "allowJs": true,
+    "checkJs": false
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "tests",
+    "lib",
+    "**/*.test.ts",
+    "**/*.spec.ts"
+  ],
+  "ts-node": {
+    "transpileOnly": true
+  }
+}

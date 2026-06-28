@@ -1,0 +1,39 @@
+# 编译输出
+dist/
+.DS_Store
+
+# 依赖
+node_modules/
+
+# 日志
+logs/
+*.log
+*.log.*
+
+# 测试覆盖率
+coverage/
+.nyc_output/
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 临时文件
+*.tmp
+temp/
+tmp/
+
+# 环境变量
+.env
+.env.local
+
+# 操作系统
+Thumbs.db
+.DS_Store
+
+# 备份文件
+*.bak
+tsconfig-base.json

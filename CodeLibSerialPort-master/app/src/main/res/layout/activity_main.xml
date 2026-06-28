@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="打开连接"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="断开连接"
+        app:layout_constraintStart_toStartOf="@+id/btnOpen"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpen" />
+
+    <Button
+        android:id="@+id/btnWriteSTA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="请求全盘数据"
+        app:layout_constraintStart_toStartOf="@+id/btnClose"
+        app:layout_constraintTop_toBottomOf="@+id/btnClose" />
+
+    <Button
+        android:id="@+id/btnWriteSAL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="亮多个灯"
+        app:layout_constraintStart_toStartOf="@+id/btnWriteSTA"
+        app:layout_constraintTop_toBottomOf="@+id/btnWriteSTA" />
+
+    <Button
+        android:id="@+id/btnRGC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="关闭所有灯"
+        app:layout_constraintStart_toStartOf="@+id/btnWriteSAL"
+        app:layout_constraintTop_toBottomOf="@+id/btnWriteSAL" />
+
+    <TextView
+        android:id="@+id/textViewResponse"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="8dp"
+        android:text="Response"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSingleLamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="亮单个灯"
+        app:layout_constraintStart_toStartOf="@+id/btnRGC"
+        app:layout_constraintTop_toBottomOf="@+id/btnRGC" />
+
+    <Button
+        android:id="@+id/btnEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="空字符串"
+        app:layout_constraintStart_toStartOf="@+id/btnSingleLamp"
+        app:layout_constraintTop_toBottomOf="@+id/btnSingleLamp" />
+
+    <Button
+        android:id="@+id/btnTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="测试系统时间"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="测试onDestory"
+        app:layout_constraintEnd_toEndOf="@+id/btnTime"
+        app:layout_constraintTop_toBottomOf="@+id/btnTime" />
+</androidx.constraintlayout.widget.ConstraintLayout>

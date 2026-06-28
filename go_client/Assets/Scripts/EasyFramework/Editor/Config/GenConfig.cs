@@ -1,0 +1,17 @@
+
+    using Easy;
+    using UnityEditor;
+    using UnityEngine;
+    public class GenConfig: EditorWindow
+    {
+        private const string GenConfigTag = "Easy/GenConfig";
+
+        [MenuItem(GenConfigTag, false)]
+        public static void GenExcel()
+        {
+            CommandRunner commandRunner = new CommandRunner(Application.dataPath + "/../../ExcelTool/gen.bat", Application.dataPath + "/../../Mod/", true, true, false);
+            string msg = commandRunner.Run("");
+            Debug.Log(msg);
+        }
+    }
+
